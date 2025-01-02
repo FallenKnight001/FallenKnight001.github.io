@@ -3,55 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="about">
-        <div class="container">
+    <section id="home" class="section">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a professional web developer.</p>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="content">
             <h2>About Me</h2>
-            <p>Hi, I'm [Your Name]. I'm a web developer with a passion for creating beautiful and functional websites. I specialize in front-end development, but I am always learning new skills.</p>
+            <p>I have been studing computer sciece for 5 years. i done my bachelor in computer science and currrently doing my masters in Data Science </p>
         </div>
     </section>
+    <section id="projects" class="section">
+        <div class="content">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>SwasthyaMitra</h3>
+                    <p>My final year project targated for elderly peaple who need help with thier medine.</p>
+                </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Description of the project goes here. It's a great project where I built something amazing!</p>
-            </div>
-            <div class="project">
-                <h3>Another Project</h3>
-                <p>Another project description. This one is awesome because it does X, Y, and Z!</p>
             </div>
         </div>
     </section>
-
-    <section id="contact">
-        <div class="container">
+    <section id="contact" class="section">
+        <div class="content">
             <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, you can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <form action="#" method="post">
+                <label for="name">Name:Sanket S. Naik</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email: sanket.sachindra.naik@gmail.com</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:I don’t always test my code, but when I do, I do it in production.</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
-
     <footer>
-        <div class="container">
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 My Portfolio</p>
     </footer>
 </body>
 </html>
